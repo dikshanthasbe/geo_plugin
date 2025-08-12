@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "OPENAI_API_KEY": "@openai_api_key"
+  },
+  "functions": {
+    "app/api/analyze/route.ts": {
+      "maxDuration": 60
+    }
+  }
+}
