@@ -1,6 +1,14 @@
-# GEO URL Analyzer Dashboard
+# GEO Scout
 
-A comprehensive GEO (Generative Engine Optimization) dashboard that allows users to paste any website URL and receive AI-powered optimization suggestions for better visibility in AI search engines like ChatGPT, Gemini, and Claude.
+**AI-First SEO Analysis for the Generative Engine Era**
+
+GEO Scout is a comprehensive tool that analyzes websites for AI search engine optimization, providing detailed insights across 6 key optimization pillars.
+
+## 📖 Description
+
+GEO Scout is a powerful web application that analyzes websites for AI-first optimization. It provides comprehensive scoring across 6 critical pillars that determine how well your content performs in AI search engines like ChatGPT, Gemini, and Claude.
+
+The tool offers real-time analysis, actionable recommendations, and detailed insights to help content creators, marketers, and developers optimize their websites for the emerging AI-first search landscape.
 
 ## 🚀 Features
 

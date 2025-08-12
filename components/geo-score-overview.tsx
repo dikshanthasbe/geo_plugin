@@ -1,6 +1,6 @@
 'use client'
 
-import { Trophy, TrendingUp, Target, Zap } from 'lucide-react'
+import { Trophy, TrendingUp, Target, Zap, Globe } from 'lucide-react'
 import { AnalysisResult } from '@/types/analysis'
 
 interface GeoScoreOverviewProps {
@@ -66,6 +66,22 @@ export default function GeoScoreOverview({ result }: GeoScoreOverviewProps) {
 
   return (
     <div className="space-y-6">
+      {/* Analyzed URL Display */}
+      <div className="card bg-gradient-to-r from-neutral-50 to-neutral-100 border border-neutral-200">
+        <div className="text-center p-6">
+          <div className="inline-flex items-center space-x-2 mb-3">
+            <Globe className="h-5 w-5 text-neutral-600" />
+            <span className="text-sm font-medium text-neutral-600">Analyzed Website</span>
+          </div>
+          <div className="text-lg font-semibold text-neutral-900 break-all">
+            {result.url}
+          </div>
+          <div className="text-sm text-neutral-500 mt-1">
+            Analysis completed on {new Date(result.timestamp).toLocaleDateString()}
+          </div>
+        </div>
+      </div>
+
       {/* Main Score Display */}
       <div className="card text-center">
         <div className="mb-6">

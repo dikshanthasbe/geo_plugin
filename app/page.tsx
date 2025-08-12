@@ -72,7 +72,7 @@ export default function Dashboard() {
               </div>
               <div>
                 <h1 className="text-3xl font-bold text-gradient">
-                  GEO URL Analyzer
+                  GEO Scout
                 </h1>
                 <p className="text-neutral-600">
                   Optimize for AI search engines

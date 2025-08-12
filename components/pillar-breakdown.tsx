@@ -5,6 +5,7 @@ import { PillarScores } from '@/types/analysis'
 
 interface PillarBreakdownProps {
   pillarScores: PillarScores
+  url?: string
 }
 
 const pillarConfig = {
@@ -46,7 +47,7 @@ const pillarConfig = {
   },
 }
 
-export default function PillarBreakdown({ pillarScores }: PillarBreakdownProps) {
+export default function PillarBreakdown({ pillarScores, url }: PillarBreakdownProps) {
   const getScoreColor = (score: number) => {
     if (score >= 80) return 'text-success-600'
     if (score >= 60) return 'text-warning-600'
@@ -97,6 +98,13 @@ export default function PillarBreakdown({ pillarScores }: PillarBreakdownProps) 
         <p className="text-neutral-600 max-w-2xl mx-auto">
           Detailed analysis of each optimization pillar with specific insights and recommendations
         </p>
+        {url && (
+          <div className="mt-3 p-3 bg-neutral-50 rounded-lg inline-block">
+            <span className="text-sm text-neutral-600">
+              Analyzing: <span className="font-medium text-neutral-900">{url}</span>
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Pillar Grid */}
